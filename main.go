@@ -1,3 +1,17 @@
+package main
+
+import (
+	"encoding/json"
+	"fmt"
+	"os"
+)
+
+type Products []Product
+
+// Продукт
+type Product struct {
+	Id          int    `json:id`
+	Name        string `json:name`
 	Price       int    `json:price`
 	Category    string `json:category`
 	Weight      string `json:weight`
